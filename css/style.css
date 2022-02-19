@@ -1,0 +1,127 @@
+html {
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.article-link {
+  text-align: center;
+}
+
+.article-link a {
+  font-size: 0.785rem;
+  padding-bottom: 1px;
+  border-bottom: solid 1px #333333;
+}
+
+.article-link a:hover {
+  border: none;
+}
+
+#header .site-logo {
+  padding: 20px 16px;
+  line-height: 1;
+}
+
+#header nav {
+  height: 40px;
+  background-color: #000000;
+}
+
+#header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header nav ul li {
+  line-height: 40px;
+  padding-right: 60px;
+}
+
+#header nav ul li a {
+  color: white;
+  font-size: 0.825rem;
+}
+
+#pickup {
+  margin: 40px 0 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#pickup article {
+  width: 32%;
+}
+
+#pickup article h2 {
+  font-size: 1rem;
+  margin: 10px 0 15px 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container main {
+  background-color: aqua;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.container main article {
+  margin-bottom: 80px;
+}
+
+.container main article h2 {
+  margin: 10px 0 15px 0;
+}
+
+.container main article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.container main article ul li {
+  font-size: 0.825rem;
+  padding-right: 15px;
+}
+
+.container main article p {
+  padding: 10px 40px 30px;
+}
+
+.container aside {
+  background-color: yellow;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+/*# sourceMappingURL=style.css.map */
