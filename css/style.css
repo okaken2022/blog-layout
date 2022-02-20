@@ -62,7 +62,7 @@ img {
 }
 
 #pickup {
-  margin: 40px 0 60px 0;
+  margin: 40px auto 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,6 @@ img {
 }
 
 .container main {
-  background-color: aqua;
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
 }
@@ -121,7 +120,6 @@ img {
 }
 
 .container aside {
-  background-color: yellow;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
   padding: 20px;
@@ -187,6 +185,72 @@ img {
   border-bottom: solid 1px #000000;
 }
 
+#footer {
+  background-color: #F7F7F7;
+}
+
+#footer .content {
+  padding: 50px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .content .item {
+  width: 30%;
+  font-size: 0.875rem;
+}
+
+#footer .content .item h3 {
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+#footer .content .item .about-list {
+  margin: 20px 0;
+}
+
+#footer .content .item .about-list li a {
+  line-height: 20px;
+  position: relative;
+  padding-left: 12px;
+}
+
+#footer .content .item .about-list li a::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+#footer .content .item .menu-list li {
+  padding: 14px;
+  border-top: solid 1px #000000;
+}
+
+#footer .content .item .menu-list li:last-child {
+  border-bottom: solid 1px #000000;
+}
+
+#footer .content .item .twitter-timeline-responsive {
+  display: none;
+}
+
+#footer .footer-text {
+  text-align: center;
+  font-size: 0.725rem;
+  padding: 10px 0;
+}
+
 @media screen and (max-width: 768px) {
   #pickup {
     margin-top: 30px;
@@ -207,6 +271,22 @@ img {
   }
   .container aside {
     padding: 0;
+  }
+  #footer .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .content .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #footer .content .item .twitter-timeline-responsive {
+    display: block;
+  }
+  #footer .content .item .twitter-timeline-pc {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
